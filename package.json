@@ -1,0 +1,27 @@
+{
+  "name": "pga-championship-betting",
+  "version": "1.0.0",
+  "description": "2026 PGA Championship Betting Pool Website",
+  "main": "index.js",
+  "scripts": {
+    "start": "firebase serve",
+    "deploy": "firebase deploy",
+    "deploy:hosting": "firebase deploy --only hosting",
+    "deploy:functions": "firebase deploy --only functions",
+    "deploy:firestore": "firebase deploy --only firestore",
+    "logs": "firebase functions:log",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "keywords": [
+    "golf",
+    "betting",
+    "pga",
+    "championship",
+    "firebase"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "firebase-tools": "^13.0.0"
+  }
+}

@@ -1,0 +1,244 @@
+{
+  "players": [
+    {
+      "name": "Scottie Scheffler",
+      "tier": 1,
+      "oddsRank": 1,
+      "espnId": "3448"
+    },
+    {
+      "name": "Rory McIlroy",
+      "tier": 1,
+      "oddsRank": 2,
+      "espnId": "3470"
+    },
+    {
+      "name": "Jon Rahm",
+      "tier": 1,
+      "oddsRank": 3,
+      "espnId": "9478"
+    },
+    {
+      "name": "Brooks Koepka",
+      "tier": 1,
+      "oddsRank": 4,
+      "espnId": "5467"
+    },
+    {
+      "name": "Viktor Hovland",
+      "tier": 1,
+      "oddsRank": 5,
+      "espnId": "10140"
+    },
+    {
+      "name": "Xander Schauffele",
+      "tier": 1,
+      "oddsRank": 6,
+      "espnId": "10593"
+    },
+    {
+      "name": "Collin Morikawa",
+      "tier": 1,
+      "oddsRank": 7,
+      "espnId": "10569"
+    },
+    {
+      "name": "Patrick Cantlay",
+      "tier": 1,
+      "oddsRank": 8,
+      "espnId": "8973"
+    },
+    {
+      "name": "Ludvig Aberg",
+      "tier": 1,
+      "oddsRank": 9,
+      "espnId": "12139"
+    },
+    {
+      "name": "Bryson DeChambeau",
+      "tier": 1,
+      "oddsRank": 10,
+      "espnId": "10046"
+    },
+    {
+      "name": "Justin Thomas",
+      "tier": 2,
+      "oddsRank": 11,
+      "espnId": "4848"
+    },
+    {
+      "name": "Jordan Spieth",
+      "tier": 2,
+      "oddsRank": 12,
+      "espnId": "5467"
+    },
+    {
+      "name": "Max Homa",
+      "tier": 2,
+      "oddsRank": 13,
+      "espnId": "10569"
+    },
+    {
+      "name": "Cameron Smith",
+      "tier": 2,
+      "oddsRank": 14,
+      "espnId": "9478"
+    },
+    {
+      "name": "Tony Finau",
+      "tier": 2,
+      "oddsRank": 15,
+      "espnId": "4686"
+    },
+    {
+      "name": "Tommy Fleetwood",
+      "tier": 2,
+      "oddsRank": 16,
+      "espnId": "4686"
+    },
+    {
+      "name": "Hideki Matsuyama",
+      "tier": 2,
+      "oddsRank": 17,
+      "espnId": "5860"
+    },
+    {
+      "name": "Will Zalatoris",
+      "tier": 2,
+      "oddsRank": 18,
+      "espnId": "11221"
+    },
+    {
+      "name": "Sam Burns",
+      "tier": 2,
+      "oddsRank": 19,
+      "espnId": "10140"
+    },
+    {
+      "name": "Matt Fitzpatrick",
+      "tier": 2,
+      "oddsRank": 20,
+      "espnId": "9478"
+    },
+    {
+      "name": "Tyrrell Hatton",
+      "tier": 3,
+      "oddsRank": 21,
+      "espnId": "8973"
+    },
+    {
+      "name": "Russell Henley",
+      "tier": 3,
+      "oddsRank": 22,
+      "espnId": "5860"
+    },
+    {
+      "name": "Sahith Theegala",
+      "tier": 3,
+      "oddsRank": 23,
+      "espnId": "11221"
+    },
+    {
+      "name": "Jason Day",
+      "tier": 3,
+      "oddsRank": 24,
+      "espnId": "1680"
+    },
+    {
+      "name": "Shane Lowry",
+      "tier": 3,
+      "oddsRank": 25,
+      "espnId": "3448"
+    },
+    {
+      "name": "Corey Conners",
+      "tier": 3,
+      "oddsRank": 26,
+      "espnId": "9478"
+    },
+    {
+      "name": "Min Woo Lee",
+      "tier": 3,
+      "oddsRank": 27,
+      "espnId": "10569"
+    },
+    {
+      "name": "Keegan Bradley",
+      "tier": 3,
+      "oddsRank": 28,
+      "espnId": "4686"
+    },
+    {
+      "name": "Tom Kim",
+      "tier": 3,
+      "oddsRank": 29,
+      "espnId": "12139"
+    },
+    {
+      "name": "Sungjae Im",
+      "tier": 3,
+      "oddsRank": 30,
+      "espnId": "10140"
+    },
+    {
+      "name": "Adam Scott",
+      "tier": 4,
+      "oddsRank": 31,
+      "espnId": "1680"
+    },
+    {
+      "name": "Rickie Fowler",
+      "tier": 4,
+      "oddsRank": 32,
+      "espnId": "4686"
+    },
+    {
+      "name": "Justin Rose",
+      "tier": 4,
+      "oddsRank": 33,
+      "espnId": "1680"
+    },
+    {
+      "name": "Cameron Young",
+      "tier": 4,
+      "oddsRank": 34,
+      "espnId": "11221"
+    },
+    {
+      "name": "Sepp Straka",
+      "tier": 4,
+      "oddsRank": 35,
+      "espnId": "10569"
+    },
+    {
+      "name": "Brian Harman",
+      "tier": 4,
+      "oddsRank": 36,
+      "espnId": "5860"
+    },
+    {
+      "name": "Denny McCarthy",
+      "tier": 4,
+      "oddsRank": 37,
+      "espnId": "9478"
+    },
+    {
+      "name": "Taylor Moore",
+      "tier": 4,
+      "oddsRank": 38,
+      "espnId": "10140"
+    },
+    {
+      "name": "Aaron Rai",
+      "tier": 4,
+      "oddsRank": 39,
+      "espnId": "8973"
+    },
+    {
+      "name": "Nick Dunlap",
+      "tier": 4,
+      "oddsRank": 40,
+      "espnId": "12139"
+    }
+  ]
+}

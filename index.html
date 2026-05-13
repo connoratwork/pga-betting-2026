@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026 PGA Championship Betting Pool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🏌️ 2026 PGA Championship Betting Pool</h1>
+            <p class="tournament-info">May 14-17, 2026 | Valhalla Golf Club</p>
+            <nav>
+                <button id="homeBtn" class="nav-btn active">Home</button>
+                <button id="draftBtn" class="nav-btn">Make Picks</button>
+                <button id="leaderboardBtn" class="nav-btn">Leaderboard</button>
+                <button id="adminBtn" class="nav-btn">Admin</button>
+            </nav>
+        </header>
+
+        <!-- Home Section -->
+        <section id="homeSection" class="section active">
+            <div class="welcome-card">
+                <h2>Welcome to the PGA Championship Betting Pool!</h2>
+                <p>Select one player from each tier to compete for the lowest combined score.</p>
+                <div class="rules">
+                    <h3>How It Works:</h3>
+                    <ul>
+                        <li>Choose 1 player from each of the 4 tiers (based on odds rankings)</li>
+                        <li>Your score = sum of all 4 players' total strokes across 4 rounds</li>
+                        <li>Lowest combined score wins!</li>
+                        <li>If a player misses the cut, they receive (worst score that round + 10 strokes) for R3 & R4</li>
+                        <li>Multiple participants can pick the same players</li>
+                    </ul>
+                </div>
+                <button id="startDraftBtn" class="primary-btn">Make Your Picks</button>
+            </div>
+        </section>
+
+        <!-- Draft Section -->
+        <section id="draftSection" class="section">
+            <div id="draftClosed" class="message-card" style="display: none;">
+                <h2>Draft is Closed</h2>
+                <p>The draft window has been closed by the administrator.</p>
+            </div>
+            
+            <div id="draftOpen">
+                <h2>Make Your Picks</h2>
+                <div class="participant-form">
+                    <label for="participantName">Your Name:</label>
+                    <input type="text" id="participantName" placeholder="Enter your name" required>
+                </div>
+
+                <div id="tierSelections">
+                    <!-- Tier 1 -->
+                    <div class="tier-section">
+                        <h3>Tier 1 - Elite Players (Odds Rank 1-10)</h3>
+                        <div id="tier1Players" class="player-grid"></div>
+                    </div>
+
+                    <!-- Tier 2 -->
+                    <div class="tier-section">
+                        <h3>Tier 2 - Top Contenders (Odds Rank 11-20)</h3>
+                        <div id="tier2Players" class="player-grid"></div>
+                    </div>
+
+                    <!-- Tier 3 -->
+                    <div class="tier-section">
+                        <h3>Tier 3 - Strong Field (Odds Rank 21-30)</h3>
+                        <div id="tier3Players" class="player-grid"></div>
+                    </div>
+
+                    <!-- Tier 4 -->
+                    <div class="tier-section">
+                        <h3>Tier 4 - Dark Horses (Odds Rank 31+)</h3>
+                        <div id="tier4Players" class="player-grid"></div>
+                    </div>
+                </div>
+
+                <div class="draft-summary">
+                    <h3>Your Selections:</h3>
+                    <div id="selectedPlayers">
+                        <p>Tier 1: <span id="selected1">None</span></p>
+                        <p>Tier 2: <span id="selected2">None</span></p>
+                        <p>Tier 3: <span id="selected3">None</span></p>
+                        <p>Tier 4: <span id="selected4">None</span></p>
+                    </div>
+                    <button id="submitPicksBtn" class="primary-btn" disabled>Submit Picks</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Leaderboard Section -->
+        <section id="leaderboardSection" class="section">
+            <h2>Live Leaderboard</h2>
+            <div id="lastUpdated" class="last-updated"></div>
+            <div id="leaderboardTable"></div>
+        </section>
+
+        <!-- Admin Section -->
+        <section id="adminSection" class="section">
+            <div id="adminLogin">
+                <h2>Admin Login</h2>
+                <input type="password" id="adminPassword" placeholder="Enter admin password">
+                <button id="adminLoginBtn" class="primary-btn">Login</button>
+            </div>
+
+            <div id="adminDashboard" style="display: none;">
+                <h2>Admin Dashboard</h2>
+                
+                <div class="admin-panel">
+                    <h3>Draft Control</h3>
+                    <button id="toggleDraftBtn" class="admin-btn">Toggle Draft Status</button>
+                    <p>Current Status: <span id="draftStatus">Loading...</span></p>
+                </div>
+
+                <div class="admin-panel">
+                    <h3>Cut Line Management</h3>
+                    <label for="cutLineScore">Cut Line Score:</label>
+                    <input type="number" id="cutLineScore" placeholder="e.g., +5">
+                    <button id="updateCutLineBtn" class="admin-btn">Update Cut Line</button>
+                    <p>Current Cut Line: <span id="currentCutLine">Not set</span></p>
+                </div>
+
+                <div class="admin-panel">
+                    <h3>Player Management</h3>
+                    <button id="viewPlayersBtn" class="admin-btn">View/Edit Players</button>
+                    <div id="playerManagement" style="display: none;"></div>
+                </div>
+
+                <div class="admin-panel">
+                    <h3>Manual Score Override</h3>
+                    <select id="overridePlayer"></select>
+                    <select id="overrideRound">
+                        <option value="1">Round 1</option>
+                        <option value="2">Round 2</option>
+                        <option value="3">Round 3</option>
+                        <option value="4">Round 4</option>
+                    </select>
+                    <input type="number" id="overrideScore" placeholder="Score">
+                    <button id="overrideScoreBtn" class="admin-btn">Override Score</button>
+                </div>
+
+                <div class="admin-panel">
+                    <h3>All Participant Picks</h3>
+                    <div id="allPicks"></div>
+                </div>
+
+                <button id="adminLogoutBtn" class="secondary-btn">Logout</button>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script>
+    <script src="config.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
