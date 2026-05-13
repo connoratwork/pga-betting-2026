@@ -1,0 +1,13 @@
+{
+  "name": "pga-betting-scripts",
+  "version": "1.0.0",
+  "description": "Scripts for PGA Championship Betting Pool",
+  "scripts": {
+    "load-players": "node load-players.js",
+    "scrape-odds": "node scrape-odds.js"
+  },
+  "dependencies": {
+    "firebase-admin": "^12.0.0",
+    "puppeteer": "^21.0.0"
+  }
+}
