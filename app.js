@@ -65,7 +65,7 @@ function setupEventListeners() {
 // Load Players from Firestore
 async function loadPlayers() {
     try {
-        const playersSnapshot = await db.collection('players').orderBy('tier').orderBy('oddsRank').get();
+        const playersSnapshot = await db.collection('players').orderBy('tier').orderBy('rank').get();
         
         const tier1Container = document.getElementById('tier1Players');
         const tier2Container = document.getElementById('tier2Players');
