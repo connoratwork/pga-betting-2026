@@ -99,7 +99,7 @@ function createPlayerCard(player, playerId) {
     
     card.innerHTML = `
         <div class="player-name">${player.name}</div>
-        <div class="player-odds">Odds Rank: ${player.oddsRank}</div>
+        <div class="player-odds">Odds: ${player.odds}</div>
     `;
     
     card.addEventListener('click', () => selectPlayer(player.tier, playerId, player.name, card));
